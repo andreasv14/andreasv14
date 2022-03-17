@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Request handler</Title>
+			<Author>Myself</Author>
+			<Description>Creates a request and a request handler class.</Description>
+			<Shortcut>mreq</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+		
+		public class $RequestDesc$ : IRequest<$ResponseType$>
+        {
+        }
+
+        public class $RequestDesc$Handler : IRequestHandler<$RequestDesc$, $ResponseType$>
+        {
+            public async Task<int> Handle($RequestDesc$ request, CancellationToken cancellationToken)
+            {
+                throw new NotImplementedException();
+            }
+        }
+		
+        ]]>
+			</Code>
+			<Declarations>
+				<Literal>
+					<ID>RequestDesc</ID>
+					<ToolTip>Request description.</ToolTip>
+					<Default>object</Default>
+				</Literal>
+				<Literal>
+					<ID>ResponseType</ID>
+					<ToolTip>Response type.</ToolTip>
+					<Default>object</Default>
+				</Literal>
+			</Declarations>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
