@@ -1,5 +1,8 @@
 ### Hi there 👋
 
+I'm all about writing clean code and coming up with clever solutions. 
+My focus is on building software that's both creative and practical, supporting the goals we're all aiming for. Excited to code and create!
+
 <!--
 **andreasv14/andreasv14** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
